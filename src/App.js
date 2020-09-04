@@ -18,6 +18,7 @@ function App() {
         Axios.get("https://swapi.dev/api/people/"+characterId)
             .then(function (response){
                 setCharacter(response.data)
+                console.log(response.data)
                 loadHomeworld(response.data)
             })
     }
